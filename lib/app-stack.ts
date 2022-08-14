@@ -8,8 +8,8 @@ export class CiCdAwsPipelineDemoStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
     
-    new CodePipeline(this, 'Pipeline_1', {
-      pipelineName: 'TestPipeline_1',
+    new CodePipeline(this, 'Pipeline001', {
+      pipelineName: 'TestPipeline001',
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.gitHub('renegmed/ci-cd-aws-pipeline-demo', 'master'),
         commands: [

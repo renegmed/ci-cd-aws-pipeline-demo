@@ -4,7 +4,7 @@ import * as cdk from 'aws-cdk-lib';
 import { CiCdAwsPipelineDemoStack } from '../lib/app-stack';
 
 const app = new cdk.App();
-new CiCdAwsPipelineDemoStack(app, 'CiCdAwsPipelineDemoStack_1', {
+new CiCdAwsPipelineDemoStack(app, 'CiCdAwsPipelineDemoStack001', {
    env: {
     account: '731833107751',
     region: 'us-east-1',
